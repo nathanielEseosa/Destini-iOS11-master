@@ -42,17 +42,15 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         storyTextView.text = story1
         topButton.setTitle(answer1a, for: .normal)
         bottomButton.setTitle(answer1b, for: .normal)
         
-        // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
-        
     }
 
-    
-    // User presses one of the buttons
+
     @IBAction func buttonPressed(_ sender: UIButton) {
         
         if storyIndex == 1 && sender.tag == 1 {
@@ -61,7 +59,6 @@ class ViewController: UIViewController {
             storyTextView.text = story3
             topButton.setTitle(answer3a, for: .normal)
             bottomButton.setTitle(answer3b, for: .normal)
-            print(storyIndex) //3
             
         } else if storyIndex == 1 && sender.tag == 2 {
             
@@ -72,21 +69,17 @@ class ViewController: UIViewController {
             
         } else if storyIndex == 3 && sender.tag == 1 {
             
-                storyIndex = 6
-                storyTextView.text = story6
-                topButton.isHidden = true
-                bottomButton.isHidden = true
-            
+            storyTextView.text = story6
+            topButton.isHidden = true
+            bottomButton.isHidden = true
+        
         } else if storyIndex == 3 && sender.tag == 2 {
             
-                storyIndex = 5
-                storyTextView.text = story5
-                topButton.isHidden = true
-                bottomButton.isHidden = true
-        }
-        
-        
-        else {
+            storyTextView.text = story5
+            topButton.isHidden = true
+            bottomButton.isHidden = true
+            
+        } else {
             
             if storyIndex == 2 && sender.tag == 1 {
                 
@@ -97,39 +90,27 @@ class ViewController: UIViewController {
                 
             } else if storyIndex == 2 && sender.tag == 2 {
                 
-                storyIndex = 4
                 storyTextView.text = story4
                 topButton.isHidden = true
                 bottomButton.isHidden = true
                 
             } else if storyIndex == 3 && sender.tag == 1 {
                 
-                storyIndex = 6
                 storyTextView.text = story6
                 topButton.isHidden = true
                 bottomButton.isHidden = true
                 
             } else if storyIndex == 3 && sender.tag == 2 {
-                storyIndex = 5
+
                 storyTextView.text = story5
                 topButton.isHidden = true
                 bottomButton.isHidden = true
+                
             }
             
         }
-            
-
-           
         
-        // TODO Step 4: Write an IF-Statement to update the views
-                
-        // TODO Step 6: Modify the IF-Statement to complete the story
-        
-    
     }
-    
-
-
 
 }
 
