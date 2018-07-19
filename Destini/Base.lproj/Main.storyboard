@@ -60,6 +60,16 @@
                                     <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17E-TM-9cz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-fk-qr9">
+                                <rect key="frame" x="16" y="15" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x9u-7S-FOZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YYD-qC-cgr" firstAttribute="top" secondItem="u0E-Z6-us4" secondAttribute="bottom" constant="34" id="1pn-V9-Sph"/>
@@ -80,13 +90,14 @@
                     </view>
                     <connections>
                         <outlet property="bottomButton" destination="YYD-qC-cgr" id="oTr-dl-hKK"/>
+                        <outlet property="restartButtonOutlet" destination="k5e-fk-qr9" id="EUx-57-Qfa"/>
                         <outlet property="storyTextView" destination="amk-E0-c5D" id="TU8-d8-Hye"/>
                         <outlet property="topButton" destination="u0E-Z6-us4" id="Dfm-eR-Gan"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="348" y="522"/>
+            <point key="canvasLocation" x="583" y="497"/>
         </scene>
     </scenes>
     <resources>
