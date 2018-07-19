@@ -63,7 +63,6 @@ class ViewController: UIViewController {
             
         } else if storyIndex == 3 && sender.tag == 1 {
             
-            
             storyIndex = 6
             storyTextView.text = story6
             topButton.isHidden = true
@@ -89,8 +88,7 @@ class ViewController: UIViewController {
             storyTextView.text = story4
             topButton.isHidden = true
             bottomButton.isHidden = true
-            
-            
+        
         }
         
         if storyIndex == 4 || storyIndex == 5 || storyIndex == 6 {
